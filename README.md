@@ -19,5 +19,5 @@ infra/
 ├── docker-compose.yml  
 └── nginx/  
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ├── nginx.conf  
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; └── conf.d/  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; └── conf.d/  
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; └── app.conf  
