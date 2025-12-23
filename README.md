@@ -21,3 +21,31 @@ infra/
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ├── nginx.conf  
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; └── conf.d/  
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; └── app.conf  
+
+api-/  
+├── Dockerfile  
+├── docker-compose.yml  
+├── .dockerignore  
+├── .env  
+└── (laravel project)  
+
+DOCKER NETWORK (SEKALI SAJA)  
+```docker network create backend-network```
+
+## URUTAN MENJALANKAN (WAJIB)
+```
+docker network create backend-network
+
+cd infra
+docker compose up -d
+
+cd api-auth
+docker compose up -d --build
+
+cd api-generic
+docker compose up -d --build
+
+cd api-transaction
+docker compose up -d --build
+
+```
